@@ -45,14 +45,7 @@ export default function Footer() {
             >
               <FaLinkedinIn />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-oxford text-mint hover:bg-mint hover:text-oxford transition"
-            >
-              <FaTwitter />
-            </a>
+            
           </div>
         </div>
 
