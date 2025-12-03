@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import MediaSlider from "../components/MediaSlider";
 import CompanyHighlights from "../components/CompanyHighlights";
+import About from "../components/About";
 import ServiceShowcase from "../components/ServiceShowcase";
 import BrandShowcase from "../components/BrandShowcase";
 import ClientTestimonials from "../components/ClientTestimonials";
@@ -26,6 +27,9 @@ export default function Home() {
 
           {/* Sección de credibilidad y contacto */}
           <CompanyHighlights />
+
+          {/* Sección sobre-nosotros */}
+          <About />
 
           {/* Sección de servicios destacados */}
           <ServiceShowcase />

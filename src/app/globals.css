@@ -19,8 +19,11 @@
   --color-foreground: var(--foreground);
   --color-oxford: #011138;   
   --color-mint: #00FFB3;   
+  --color-prussian: #102D46;
+  --color-celeste: #C1F4E5;
   --font-sans: "Satoshi", sans-serif; 
   --font-mono: var(--font-geist-mono);
+  
 }
 
 @media (prefers-color-scheme: dark) {
