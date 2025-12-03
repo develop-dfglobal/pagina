@@ -48,7 +48,7 @@ const testimonials = [
 
 export default function ClientTestimonials() {
   return (
-    <section className="w-full bg-gradient-to-br from-black to-oxford text-white py-24 px-6">
+    <section className="w-full  text-white py-24 px-6">
       <div className="max-w-screen-xl mx-auto space-y-16">
         
         {/* Bloque superior */}
