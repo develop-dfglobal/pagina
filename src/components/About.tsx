@@ -7,7 +7,7 @@ export default function AboutSection() {
   return (
     <section
       id="sobre-nosotros"
-      className="w-full bg-gradient-to-br from-prussian to-oxford text-white py-24 px-6 relative overflow-hidden"
+      className="w-full bg-gradient-to-br from-oxford to-black text-white py-24 px-6 relative overflow-hidden"
     >
       {/* Contenido principal: sobre nosotros + imagen */}
       <div className="relative z-10 max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">

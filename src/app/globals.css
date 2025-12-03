@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #011138; /* Oxford */
+  --foreground: #ffffff; /* Blanco */
 }
 
 /* Carga local de fuente Satoshi desde public/fonts */
@@ -26,12 +26,6 @@
   
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
