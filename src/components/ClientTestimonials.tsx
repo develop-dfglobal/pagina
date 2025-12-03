@@ -61,15 +61,6 @@ export default function ClientTestimonials() {
           ))}
         </div>
 
-        {/* Botón CTA */}
-        <div className="text-center">
-          <a
-            href="#conocenos"
-            className="inline-block px-8 py-4 rounded-full border border-mint text-mint hover:bg-mint hover:text-oxford transition font-semibold"
-          >
-            CONOCE MÁS
-          </a>
-        </div>
       </div>
     </section>
   );

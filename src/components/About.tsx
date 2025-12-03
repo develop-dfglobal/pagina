@@ -27,7 +27,7 @@ export default function AboutSection() {
               </h3>
               <span className="flex-grow border-t border-white/40"></span>
             </div>
-            <p className="text-xl text-white leading-relaxed max-w-2xl text-justify">
+            <p className="text-xl text-white leading-relaxed max-w-2xl">
               Proveer soluciones tecnológicas y servicios de consultoría que impulsen la transformación digital
               y el crecimiento de nuestros clientes. Actuamos como un socio estratégico, comprometidos con la eficiencia,
               la innovación y el éxito a largo plazo de sus infraestructuras de TI.

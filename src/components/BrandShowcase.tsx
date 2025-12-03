@@ -33,7 +33,7 @@ export default function BrandShowcase() {
   const [activeBrand, setActiveBrand] = useState<Brand | null>(null);
 
   return (
-    <section className="relative w-full bg-white text-oxford py-14 px-6 overflow-hidden">
+    <section className="relative w-full bg-[#EEFCF8] text-oxford py-14 px-6 overflow-hidden">
       <div className="relative max-w-screen-xl mx-auto text-center space-y-16">
         
         {/* Slogan */}

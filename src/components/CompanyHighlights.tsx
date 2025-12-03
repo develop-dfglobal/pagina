@@ -90,7 +90,7 @@ export default function CompanyHighlights() {
       </div>
 
 {/* Bloque final: consulta gratuita */}
-<div className="m-20">
+<div className="my-20 mx-6">
   <div className="max-w-screen-xl mx-auto bg-black/80 rounded-2xl px-8 py-10 lg:px-16 lg:py-14 flex flex-col lg:flex-row items-center text-white shadow-xl">
     {/* Izquierda: ícono + texto + número */}
     <div className="flex items-center gap-4 lg:w-1/2 lg:pr-8">
