@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/Headers/Header";
 import MediaSlider from "../components/MediaSlider";
 import CompanyHighlights from "../components/CompanyHighlights";
 import About from "../components/About";
@@ -16,7 +16,10 @@ export default function Home() {
       {/* Contenido principal */}
       <main className="flex flex-col items-center justify-center flex-1 w-full">
         {/* Slider principal */}
-        <MediaSlider />
+        {/* Slider principal */}
+        <section id="inicio" className="relative w-full min-h-[60vh] z-10">
+          <MediaSlider />
+        </section>
 
         {/* Bloque con fondo fijo */}
         <div className="w-full relative">
@@ -26,22 +29,34 @@ export default function Home() {
           </div>
 
           {/* Sección de credibilidad y contacto */}
-          <CompanyHighlights />
+          <section id="">
+            <CompanyHighlights />
+          </section>
 
           {/* Sección sobre-nosotros */}
-          <About />
+          <section id="about">
+            <About />
+          </section>
 
           {/* Sección de servicios destacados */}
-          <ServiceShowcase />
+          <section id="servicios">
+            <ServiceShowcase />
+          </section>
 
           {/* Sección de marcas */}
-          <BrandShowcase />
+          <section id="BrandShowcase">
+            <BrandShowcase />
+          </section>
 
           {/* Sección de testimonios */}
-          <ClientTestimonials />
+          <section id="ClientTestimonials">
+            <ClientTestimonials />
+          </section>
 
           {/* Sección de pie de pagina */}
-          <Footer />
+          <section id="Footer">
+            <Footer />
+          </section>
         </div>
       </main>
     </div>

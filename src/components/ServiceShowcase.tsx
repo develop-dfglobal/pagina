@@ -5,7 +5,6 @@ import {
   SignalIcon,
   ServerStackIcon,
   CloudIcon,
-  ArrowRightIcon,
 } from "@heroicons/react/24/outline";
 
 export default function ServiceShowcase() {
@@ -38,10 +37,11 @@ export default function ServiceShowcase() {
           {/* Botón CTA */}
           <div className="mt-10">
             <a
-              href="#servicios"
+              href="/presentacion.pdf"
+              download
               className="inline-block px-8 py-4 rounded-full border border-mint text-mint hover:bg-mint hover:text-oxford transition font-semibold"
             >
-              MÁS SERVICIOS
+              VER MÁS SERVICIOS
             </a>
           </div>
         </div>
@@ -66,8 +66,8 @@ export default function ServiceShowcase() {
             },
             {
               icon: <CloudIcon className="h-8 w-8 text-mint" />,
-              title: "Soluciones Nube Híbridas",
-              desc: "Flexibilidad y escalabilidad con integración local y en la nube.",
+              title: "NOC/SOC",
+              desc: "Monitoreo y operación continua de redes y seguridad para garantizar estabilidad y protección.",
             },
           ].map((item, idx) => (
             <div
@@ -79,7 +79,6 @@ export default function ServiceShowcase() {
                 <h4 className="text-lg font-semibold text-white mt-4 mb-2">{item.title}</h4>
                 <p className="text-base text-gray-400">{item.desc}</p>
               </div>
-              <ArrowRightIcon className="h-5 w-5 text-mint mt-6 self-end group-hover:translate-x-1 transition-transform" />
             </div>
           ))}
         </div>

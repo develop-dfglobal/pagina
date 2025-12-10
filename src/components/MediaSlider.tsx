@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 type MediaItem = {
   type: "image";
@@ -26,14 +27,20 @@ export default function MediaSlider() {
   }, []);
 
   return (
-    <div className="relative w-full h-[750px] overflow-hidden bg-black">
+    <div className="relative w-full h-full min-h-screen overflow-hidden bg-black">
       {mediaItems.map((item, index) => (
         <div
           key={index}
           className={`absolute top-0 left-0 w-full h-full transition-all duration-1000 ease-in-out
             ${index === current ? "opacity-100 scale-100 z-0" : "opacity-0 scale-105 z-0"}`}
         >
-          <img src={item.src} alt={item.alt || ""} className="w-full h-full object-cover" />
+          <Image
+            src={item.src}
+            alt={item.alt || ""}
+            fill
+            priority={index === 0} // optimiza el primer slide
+            className="object-cover"
+          />
         </div>
       ))}
 
@@ -43,20 +50,20 @@ export default function MediaSlider() {
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">
             PROTEGE LO QUE MÁS TE IMPORTA, <span className="text-mint">TU INFORMACIÓN</span>
           </h2>
-          <p className="mb-6 text-xl leading-relaxed">
+          <p className="mb-6 text-base md:text-lg lg:text-xl leading-relaxed">
             Soluciones avanzadas de ciberseguridad para blindar los datos críticos de tu empresa.<br />
             Monitoreo 24/7, auditorías y estrategias de defensa adaptadas a tus necesidades.
           </p>
           <a
             href="#conocenos"
-            className="px-5 py-2 lg:px-6 lg:py-3 rounded-full  bg-oxford text-white hover:bg-mint hover:text-oxford transition font-semibold inline-block"
+            className="px-5 py-2 lg:px-6 lg:py-3 rounded-full bg-oxford text-white hover:bg-mint hover:text-oxford transition font-semibold inline-block"
           >
             CONÓCENOS
           </a>
         </div>
       </div>
 
-      {/* Flechas con fondo mint y color oxford */}
+      {/* Flechas */}
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-mint hover:bg-mint/80 text-oxford p-2 rounded-full z-30 transition"
