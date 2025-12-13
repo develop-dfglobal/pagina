@@ -29,8 +29,8 @@ export function ScrollLink({ targetId, children, className, onClick }: ScrollLin
         const sectionHeight = targetElement.getBoundingClientRect().height;
 
         const offsetMap: Record<string, number> = {
-          servicios: sectionHeight / 3,
-          marcas: sectionHeight / 6,
+          servicios: 60,
+          marcas: 60,
           about: 60,
           inicio: 60,
           ClientTestimonials: 60,
