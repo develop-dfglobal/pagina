@@ -15,12 +15,15 @@ export const menuItems = {
   marcas: {
     label: "MARCAS",
     items: [
-      { id: "marca1", label: "Marca 1", href: "#marca1" },
-      { id: "marca2", label: "Marca 2", href: "#marca2" },
-      { id: "marca3", label: "Marca 3", href: "#marca3" },
+      { id: "fortinet", label: "Fortinet", href: "#marcas" },
+      { id: "cisco", label: "Cisco", href: "#marcas" },
+      { id: "hpe", label: "HPE", href: "#marcas" },
+      { id: "dell", label: "Dell", href: "#marcas" },
+      { id: "aruba", label: "Aruba", href: "#marcas" },
+      { id: "ibm", label: "IBM", href: "#marcas" },
     ],
   },
-  contacto: { id: "contacto", label: "CONTACTO", href: "#contacto" },
+  contacto: { id: "footer", label: "CONTACTO", href: "#footer" },
   soporte: { id: "soporte", label: "SOPORTE", href: "#conocenos", isButton: true },
 };
 

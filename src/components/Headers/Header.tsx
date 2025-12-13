@@ -4,10 +4,14 @@ import { useState } from "react";
 import Image from "next/image";
 import HeaderTopBar from "./HeaderTopBar";
 import HeaderDesktopMenu from "./HeaderDesktopMenu";
-import HeaderMobileMenu from "././HeaderMobileMenu";
+import HeaderMobileMenu from "./HeaderMobileMenu";
 import { menuItems } from "./menuConfig";
 
-export default function Header() {
+type HeaderProps = {
+  openContactModal: () => void; // << nueva prop
+};
+
+export default function Header({ openContactModal }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
@@ -37,24 +41,46 @@ export default function Header() {
           </div>
 
           {/* Menú escritorio */}
-          <HeaderDesktopMenu 
-            activeMenu={activeMenu} 
-            setActiveMenu={setActiveMenu} 
+          <HeaderDesktopMenu
+            activeMenu={activeMenu}
+            setActiveMenu={setActiveMenu}
+            // aquí también puedes pasar openContactModal si quieres que el desktop abra el modal
+            openContactModal={openContactModal}
           />
 
           {/* Botón hamburguesa móvil */}
           <div className="flex lg:hidden">
-            <button 
-              onClick={() => setMenuOpen(!menuOpen)} 
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
               className="text-white focus:outline-none"
             >
               {menuOpen ? (
-                <svg className="h-6 w-6 text-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="h-6 w-6 text-mint"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               ) : (
-                <svg className="h-6 w-6 text-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="h-6 w-6 text-mint"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               )}
             </button>
@@ -62,11 +88,12 @@ export default function Header() {
         </div>
 
         {/* Menú móvil */}
-        <HeaderMobileMenu 
-          menuOpen={menuOpen} 
-          activeMenu={activeMenu} 
+        <HeaderMobileMenu
+          menuOpen={menuOpen}
+          activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
           closeMenu={closeMenu}
+          openContactModal={openContactModal} // << aquí
         />
       </div>
     </header>

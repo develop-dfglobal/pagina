@@ -33,3 +33,11 @@ body {
    font-family: "Satoshi", sans-serif;
 
 }
+
+section {
+  scroll-margin-top: 140px; 
+}
+
+#servicios {
+  scroll-margin-top: 160px; 
+}
