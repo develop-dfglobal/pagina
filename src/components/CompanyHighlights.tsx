@@ -98,9 +98,18 @@ export default function CompanyHighlights() {
         <PhoneIcon className="h-6 w-6" />
       </div>
       <div>
-        <h3 className="text-lg lg:text-xl font-bold text-white">OBTÉN UNA CONSULTA GRATUITA</h3>
-        <p className="text-mint text-lg lg:text-xl font-bold">(0414) 200-5820</p>
-      </div>
+  <h3 className="text-lg lg:text-xl font-bold text-white">
+    OBTÉN UNA CONSULTA GRATUITA
+  </h3>
+      <a
+        href="https://wa.me/584142005820"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-mint text-lg lg:text-xl font-bold"
+      >
+        (0414) 200-5820
+      </a>
+    </div>
     </div>
 
     {/* Línea divisoria */}
