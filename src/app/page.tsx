@@ -70,9 +70,9 @@ export default function Page() {
             <BrandShowcase />
           </section>
 
-          <section id="ClientTestimonials">
+          {/* <section id="ClientTestimonials">
             <ClientTestimonials />
-          </section>
+          </section> */}
 
           <section id="footer" className="scroll-mt-24">
             <Footer />

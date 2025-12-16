@@ -22,15 +22,7 @@ export default function Footer() {
           {/* Redes sociales */}
           <div className="flex gap-4">
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-oxford text-mint hover:bg-mint hover:text-oxford transition"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/dfglobaloficial?igsh=MW0yNW5iM2U1N3N2NA%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-oxford text-mint hover:bg-mint hover:text-oxford transition"
@@ -38,7 +30,15 @@ export default function Footer() {
               <FaInstagram />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.facebook.com/share/1DM7QV2vM5/?mibextid=wwXIfr."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-oxford text-mint hover:bg-mint hover:text-oxford transition"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dfglobal-consulting-55a836394?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-oxford text-mint hover:bg-mint hover:text-oxford transition"
