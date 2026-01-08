@@ -82,7 +82,7 @@ export default function CompanyHighlights() {
               className="object-cover rounded-xl"
             />
             <div className="absolute bottom-0 right-0 bg-mint text-oxford rounded-tl-xl px-6 py-4 w-48 text-center shadow-lg">
-              <h2 className="text-3xl font-bold">25</h2>
+              <h2 className="text-3xl font-bold">5</h2>
               <p className="text-sm font-semibold">AÑOS DE EXPERIENCIA</p>
             </div>
           </div>

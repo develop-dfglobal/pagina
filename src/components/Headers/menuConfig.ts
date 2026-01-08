@@ -18,7 +18,7 @@ export const menuItems = {
       { id: "fortinet", label: "Fortinet", href: "#marcas" },
       { id: "cisco", label: "Cisco", href: "#marcas" },
       { id: "hpe", label: "HPE", href: "#marcas" },
-      { id: "dell", label: "Dell", href: "#marcas" },
+      // { id: "dell", label: "Dell", href: "#marcas" },
       { id: "aruba", label: "Aruba", href: "#marcas" },
       { id: "ibm", label: "IBM", href: "#marcas" },
     ],

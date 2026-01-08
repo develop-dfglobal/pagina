@@ -13,7 +13,7 @@ const partnerBrands: Brand[] = [
   { name: "Fortinet", logo: "/marcas/fortinet.png", description: "Fortinet ofrece soluciones avanzadas de ciberseguridad para proteger redes, usuarios y datos." },
   { name: "Cisco", logo: "/marcas/cisco.png", description: "Cisco lidera en redes, colaboración, seguridad y soluciones empresariales escalables." },
   { name: "HPE", logo: "/marcas/hpe.png", description: "Hewlett Packard Enterprise proporciona infraestructura de TI híbrida, servidores y soluciones empresariales." },
-  { name: "Dell Technologies", logo: "/marcas/dell.png", description: "Dell impulsa la transformación digital con hardware, almacenamiento, servidores y servicios en la nube." },
+  // { name: "Dell Technologies", logo: "/marcas/dell.png", description: "Dell impulsa la transformación digital con hardware, almacenamiento, servidores y servicios en la nube." },
   { name: "Aruba", logo: "/marcas/aruba.png", description: "Aruba Networks ofrece soluciones de conectividad inalámbrica y gestión de redes seguras." },
   { name: "IBM", logo: "/marcas/ibm.png", description: "IBM brinda soluciones de nube híbrida, inteligencia artificial y servicios de consultoría empresarial." },
 ];

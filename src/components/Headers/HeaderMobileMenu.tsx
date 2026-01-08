@@ -135,7 +135,7 @@ export default function HeaderMobileMenu({
 
         {/* Botón SOPORTE */}
         <a
-          href="https://wa.me/584142005820"
+          href="https://soporte.dfglobal.com.ve"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 rounded-full border border-mint text-mint hover:bg-mint hover:text-oxford transition font-semibold text-center mt-2"
